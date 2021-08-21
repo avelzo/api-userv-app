@@ -36,6 +36,8 @@ $container = $containerBuilder->build();
 // Instantiate the app
 AppFactory::setContainer($container);
 $app = AppFactory::create();
+$app->setBasePath("/api"); //Added to base url
+
 $callableResolver = $app->getCallableResolver();
 
 // Register middleware
