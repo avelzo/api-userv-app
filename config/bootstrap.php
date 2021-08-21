@@ -15,7 +15,7 @@ $container = $containerBuilder->build();
 
 // Create App instance
 $app = $container->get(App::class);
-
+$app->setBasePath('/api');
 // Register routes
 (require __DIR__ . '/routes.php')($app);
 
