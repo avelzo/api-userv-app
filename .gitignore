@@ -19,15 +19,8 @@ package-lock.json
 *.cer
 *.der
 
-vendor/
 build/
 node_modules/
-
-.env
-public/.env
-
-env.php
-config/env.php
 
 #!public/assets/
 #public/assets/*
