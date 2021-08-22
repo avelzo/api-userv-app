@@ -10,6 +10,13 @@ return function (App $app) {
     // Redirect to Swagger documentation
     $app->get('/', \App\Action\Home\HomeAction::class)->setName('home');
 
+    $app->get('/check', \App\Action\Check\CheckAction::class)->setName('check');
+    // $app->get('/check', function (Request $request, Response $response, $args) {
+    //     $response->getBody()->write("Hello world!");
+    //     return $response;
+    // });
+
+
     // Swagger API documentation
     $app->get('/docs/v1', \App\Action\OpenApi\Version1DocAction::class)->setName('docs');
 

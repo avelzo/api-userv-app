@@ -7,3 +7,5 @@ $settings['logger']['level'] = \Monolog\Logger::INFO;
 
 // Database
 $settings['db']['database'] = 'slim_skeleton';
+$settings['db']['username'] = 'ServApiUsr2021';
+$settings['db']['password'] = 'dbApiUsrPwd29200';

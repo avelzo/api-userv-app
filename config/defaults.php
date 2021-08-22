@@ -30,11 +30,11 @@ $settings['error'] = [
 
 // Logger settings
 $settings['logger'] = [
-    'name' => 'app',
-    'path' => $settings['root'] . '/logs',
-    'filename' => 'app.log',
-    'level' => \Monolog\Logger::DEBUG,
-    'file_permission' => 0775,
+    'name'              => 'app',
+    'path'              => $settings['root'] . '/logs',
+    'filename'          => 'app.log',
+    'level'             => \Monolog\Logger::DEBUG,
+    'file_permission'   => 0775,
 ];
 
 // Database settings
@@ -78,8 +78,10 @@ $settings['phoenix'] = [
             'adapter' => 'mysql',
             'host' => '127.0.0.1',
             'port' => 3306,
-            'username' => 'root',
-            'password' => '',
+            // 'username' => 'root',
+            // 'password' => '',
+            'username' => 'ServApiUsr2021',
+            'password' => 'dbApiUsrPwd29200',
             'db_name' => 'slim_skeleton_dev',
             'charset' => 'utf8',
         ],
@@ -87,8 +89,10 @@ $settings['phoenix'] = [
             'adapter' => 'mysql',
             'host' => '127.0.0.1',
             'port' => 3306,
-            'username' => 'root',
-            'password' => 'root',
+            // 'username' => 'root',
+            // 'password' => 'root',
+            'username' => 'ServApiUsr2021',
+            'password' => 'dbApiUsrPwd29200',
             'db_name' => 'slim_skeleton_diff',
             'charset' => 'utf8',
         ],

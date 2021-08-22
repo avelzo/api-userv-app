@@ -8,6 +8,8 @@ ini_set('display_errors', '1');
 
 // Database
 $settings['db']['database'] = 'slim_skeleton_test';
+$settings['db']['username'] = 'ServApiUsr2021';
+$settings['db']['password'] = 'dbApiUsrPwd29200';
 
 // Mocked Logger settings
 $settings['logger'] = [

@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Action\OpenApi;
+namespace App\Action\Check;
 
 use App\Responder\Responder;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Symfony\Component\Yaml\Yaml;
 
 /**
  * Action.
  */
-final class Version1DocAction
+final class CheckAction
 {
     private Responder $responder;
 
@@ -33,13 +32,8 @@ final class Version1DocAction
      * @return ResponseInterface The response
      */
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface {
-        // Path to the yaml file
-        $yamlFile = __DIR__ . '/../../../resources/api/example_v1.yaml';
 
-        $viewData = [
-            'spec' => json_encode(Yaml::parseFile($yamlFile)),
-        ];
-
-        return $this->responder->withTemplate($response, 'doc/swagger.php', $viewData);
+        return $this->responder->withTemplate($response, 'check_template.php', []);
     }
+
 }
